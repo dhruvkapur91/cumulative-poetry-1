@@ -52,7 +52,6 @@ ___
 
 Flags supported 
 - `--reveal-for-day for_which_day` : Reveals the tale up till that day
-- `--recite` : Recites the whole tale with a day wise breakage
 
 Example usage: 
 
@@ -67,33 +66,6 @@ This is the malt that lay in
     the house that Jack built.
 ```
 
-`$ java -jar poetry-class.jar --recite`
-```
-Day 1 - 
-This is the house that Jack built.
-
-Day 2 - 
-This is the malt that lay in
-    the house that Jack built.
-
-... // There will be a tale for everyday
-...
-
-Day 12 - 
-This is the horse and the hound and the horn that belonged to
-    the farmer sowing his corn that kept
-    the rooster that crowed in the morn that woke
-    the priest all shaven and shorn that married
-    the man all tattered and torn that kissed
-    the maiden all forlorn that milked 
-    that cow with the crumpled horn that tossed
-    the dog that worried 
-    the cat that killed
-    the rat that ate
-    the malth that lay in 
-    the house that Jack built.
-
-```
 
 3. It is expected that all code is unit tested. If you don't know about unit tests, don't worry - here is a friendly [blog](https://martinfowler.com/bliki/UnitTest.html) by Martin Fowler talking about unit testing. And you can take a look at  [junit's official guide](https://junit.org/junit5/docs/current/user-guide/) to efficiently write tests with same.
 
