@@ -74,3 +74,39 @@ This is the malt that lay in
 5. Please use a convention for your git messages, like the one mentioned [here](https://chris.beams.io/posts/git-commit/). Also, try to keep your commits small with one logical change in each commit.
 
 6. Use `gradle` as the build tool. You can learn about it from [official documentation](https://gradle.org/guides/#getting-started). However be careful with the time you spend on it, as its quite exhaustive. It might be better to connect with people in your office who already worked with or know about gradle. Anyhow, `./gradlew test` should get you started for running tests. 
+
+
+## Expectation from release 2
+
+The poetry class wants each line to echo twice, if the flag is specified. Else retain the default behaviors. The purpose is that the poetry starts reading more like a song.
+
+**Technical expecations**
+
+1. Support the new flags as shown below
+
+Flags supported 
+- `--reveal-for-day for_which_day [--echo]` : Reveals the tale up till that day, with an optional echo
+
+Example usage: 
+
+`$ java -jar poetry-class.jar --reveal-for-day 1`
+```
+This is the house that Jack built.
+```
+
+`$ java -jar poetry-class.jar --echo --reveal-for-day 1`
+```
+This is the house that Jack built
+    the house that Jack built.
+```
+
+`$ java -jar poetry-class.jar --echo --reveal-for-day 2`
+```
+This is the malth that lay in
+    the malth that lay in
+    the house that Jack built
+    the house that Jack built.
+```
+2. As mentioned previously, all code is unit tested. Maintained in source control with small commits.
+
+3. Try to ensure that your classes are bite sized and have a single responsibility allocated to them. A practise of [Object Calisthenics](https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf) can help you achieve that.
